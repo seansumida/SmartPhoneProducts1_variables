@@ -16,7 +16,7 @@
 <body>
     
     <header>
-        <h1>Port's Used Smart Phone Store</h1>
+        <h1>Sean's Used Smart Phone Store</h1>
     </header>
     <div>
         <aside>
@@ -27,37 +27,17 @@
         </aside>
 
         <main>
-            <section class="item" id="HTC">
-                <h2><script>document.write(name1)</script></h2>
-                <p><script>document.write(price1)</script></p>
-                <img id="image1_id"><script>image1_id.src = image1;</script>
-            </section>
-
+        <script>
+            for (var i = 1; eval("typeof name"+i) != 'undefined'; i++){
+            document.write(`
             <section class="item">
-                <h2><script>document.write(name2)</script></h2>
-                <p><script>document.write(price2)</script></p>
-                <img id="image2_id"><script>image2_id.src = image2;</script>
+                <h2>${eval('name' + i)}</h2>
+                <p>${eval('price' + i)}</p>
+                <img src ="${eval('image' + i)}">
             </section>
-
-            <section class="item">
-                <h2><script>document.write(name3)</script></h2>
-                <p><script>document.write(price3)</script></p>
-                <img id="image3_id"><script>image3_id.src = image3;</script>
-            </section>
-
-            <section class="item"
-                <h2><script>document.write(name4)</script></h2>
-                <p><script>document.write(price4)</script></p>
-                <img id="image4_id"><script>image4_id.src = image4;</script>
-            </section>
-
-            <section class="item">
-                <h2><script>document.write(name5)</script></td>
-                </h2>
-                <p><script>document.write(price5)</script></p>
-                <img id="image5_id"><script>image5_id.src = image5;</script>
-            </section>
-
+            `)
+            }
+        </script>
         </main>
     </div>
     <footer>
